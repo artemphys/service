@@ -1,0 +1,185 @@
+{
+  "planInput": {
+    "excludeWastageCost": false,
+    "percentOfVialSharing": 100,
+    "planPopulationSizeAtTheBaseYear": 10000000,
+    "annualGrowthRate": 0.70,
+    "melanomaIncidenceRate": 23.57,
+    "percentAdvancedStage": 3.1,
+    "percentUnresectableAdvancedMelanoma": 2.4,
+    "meanWeight": 82.08,
+    "weightDeviation": 20.51
+  },
+  "adminCost": {
+    "adminCostType": "byCycle",
+    "firstHour": 230.5,
+    "additionalHour": 39.13,
+    "perCycle": 250,
+    "perPhysicianVisit": 128.48
+  },
+  "selectedComparators": ["dacarbazine", "temozolomide", "nivolumab", "vemurafenib", "dabrafenib"],
+  "adverseEvent": {
+    "anemia": 954,
+    "arthralgia": 2355.17,
+    "cutaneousSquamousCellCarcinoma": 671.22,
+    "fatigue": 2320,
+    "oliguria": 4268,
+    "rash": 5137.62,
+    "pyrexia": 37040,
+    "enterocolitis": 9600
+  },
+  "comparators": {
+    "pembrolizumab": {
+      "treatmentDurations": 6.2,
+      "infusionTimePerCycle": 0.5,
+      "numberVisitPerCycle": 1,
+      "vials": [
+        {
+          "size": 100,
+          "price": 4316
+        }
+      ]
+    },
+    "dacarbazine": {
+      "treatmentDurations": 1.6,
+      "infusionTimePerCycle": 1.5,
+      "numberVisitPerCycle": 5,
+      "vials": [
+        {
+          "size": 200,
+          "price": 10.59
+        }
+      ]
+    },
+    "nivolumab": {
+      "treatmentDurations": 5.3,
+      "infusionTimePerCycle": 1,
+      "numberVisitPerCycle": 1,
+      "costByVials": "mixedVials",
+      "vials": [
+        {
+          "size": 40,
+          "price": 959.2
+        },
+        {
+          "size": 100,
+          "price": 2398
+        }
+      ]
+    },
+    "paclitaxel": {
+      "treatmentDurations": 3,
+      "infusionTimePerCycle": 1,
+      "numberVisitPerCycle": 1,
+      "costByVials": "mixedVials",
+      "vials": [
+        {
+          "size": 30,
+          "price": 12.8
+        },
+        {
+          "size": 100,
+          "price": 41.57
+        },
+        {
+          "size": 300,
+          "price": 127
+        }
+      ]
+    },
+    "carboplatin": {
+      "treatmentDurations": 3,
+      "infusionTimePerCycle": 1,
+      "numberVisitPerCycle": 1,
+      "vials": [
+        {
+          "size": 600,
+          "price": 79.3
+        }
+      ]
+    },
+    "ipilimumab": {
+      "treatmentDurations": 2.86,
+      "infusionTimePerCycle": 1.5,
+      "numberVisitPerCycle": 1,
+      "costByVials": "50",
+      "vials": [
+        {
+          "size": 50,
+          "price": 6560
+        },
+        {
+          "size": 200,
+          "price": 26242
+        }
+      ]
+    },
+    "temozolomide": {
+      "treatmentDurations": 1.9,
+      "prescriptionValidPeriod": 28,
+      "costByPackage": "100",
+      "packages": [
+        {
+          "size": 100,
+          "price": 1453.73,
+          "packageSize": 5
+        },
+        {
+          "size": 250,
+          "price": 3635.35,
+          "packageSize": 5
+        }
+      ]
+    },
+    "vemurafenib": {
+      "treatmentDurations": 4.2,
+      "prescriptionValidPeriod": 28,
+      "packages": [
+        {
+          "size": 240,
+          "price": 5425.4,
+          "packageSize": 120
+        }
+      ]
+    },
+    "dabrafenib": {
+      "treatmentDurations": 4.9,
+      "prescriptionValidPeriod": 28,
+      "packages": [
+        {
+          "size": 75,
+          "price": 8797.69,
+          "packageSize": 120
+        }
+      ]
+    },
+    "il2": {
+      "treatmentDurations": 3,
+      "infusionTimePerCycle": 4.5,
+      "numberVisitPerCycle": 2,
+      "vials": [
+        {
+          "size": 22000000,
+          "price": 2516.52
+        }
+      ]
+    }
+  },
+  "marketShareSize": {
+    "referenceScenario": {
+      "dacarbazine":	[    9,    7,    5,    3,    2,    2],
+      "temozolomide":	[19.75,   13,   11,    9,    7,    5],
+      "nivolumab":		[16.25,   16,   14,   12,   10,    8],
+      "vemurafenib":	[    0,   15,   25,   35,   40,   45],
+      "dabrafenib":		[    0,    0,    0,    0,    0,    0]
+    },
+    "newDrugScenario" :{
+      "pembrolizumab":	[    0,  7.5, 12.5, 17.5,   20, 22.5],
+      "dacarbazine":	[    9,    7,    5,    3,    2,    2],
+      "temozolomide":	[19.75,   13,   11,    9,    7,    5],
+      "nivolumab":		[16.25,	  16,   14,   12,   10,    8],
+      "vemurafenib":	[    0,  7.5, 12.5, 17.5,   20, 22.5],
+      "dabrafenib":		[    0,    0,    0,    0,    0,    0]
+    }
+  }
+}
